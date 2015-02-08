@@ -269,6 +269,9 @@ h3 {
 /*------------------------------*/
 /* About page
 /*------------------------------*/
+.about-image{
+    margin: 2% 40%;
+}
 .about-text {
     text-align: justify;
     font-size: 1.5em;
