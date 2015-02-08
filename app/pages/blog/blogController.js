@@ -1,0 +1,3 @@
+portfolioApp.controller('blogController', [function () {
+
+}]);
