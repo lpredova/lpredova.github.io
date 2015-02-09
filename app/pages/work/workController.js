@@ -5,4 +5,6 @@ portfolioApp.controller('workController', ['$scope', '$location',
             $location.path('/work/project/' + slug)
         }
 
+
+
     }]);

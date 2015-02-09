@@ -1,11 +1,25 @@
 <div class="container">
     <div class="row">
-        <h1 class="category-title">Lovro's Blog</h1>
+
 
         <div class="col-md-12">
-            <!--<div class="comming-soon">
-                Comming soon !
-            </div>-->
+            <a href="/work" class="about-mark">Back</a>
+
+
+            <div ng-repeat="p in project">
+                <h1 class="category-title">{{p.title}}</h1>
+                {{p.description}}
+                {{p.link}}
+                {{p.tags}}
+                {{p.technologies}}
+                {{p.project_status}}
+                {{p.repo}}
+            </div>
+            <div ng-repeat="photo in photos">
+                <img src="{{photo.url}}">
+            </div>
+
+
         </div>
     </div>
 </div>
