@@ -25,6 +25,13 @@ h3 {
     text-align: center;
 }
 
+.visibility-hide{
+    visibility: hidden;
+}
+.visibility-show{
+    visibility: visible;
+}
+
 .col-centered {
     float: none;
     margin: 0 auto;
@@ -174,6 +181,15 @@ h3 {
 /*------------------------------*/
 /* Home page
 /*------------------------------*/
+.home-cover{
+    background:  url("/app/assets/images/background.jpg ") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 .hi-text {
     margin: 10% 0 5% 5%;
     font-size: 7em;
@@ -488,6 +504,38 @@ h3 {
 /* Blog page
 /*------------------------------*/
 
+#input-container{
+    text-align: center;
+    font-size: 3em;
+    padding: 4%;
+    margin:2% 25%;
+}
+
+
+.input-search-blog:focus,
+#input-container:focus{
+    text-align: center;
+    border-color: #000;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
+    outline: 0 none;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
 .comming-soon {
     margin: 30%;
     color: #000;
@@ -527,4 +575,43 @@ h3 {
     background: #ffff00;
     padding: 0.5%;
     margin: 0 0.4% 4% 0;
+}
+
+/*------------------------------*/
+/* Project page
+/*------------------------------*/
+
+.back-button{
+    font-size: 2em;
+}
+
+.project-image{
+    margin: 4% 0;
+    height: 400px;
+}
+
+.project-description{
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+
+.project-link{
+    padding: 2px;
+    text-align: center;
+    margin: 4% 0;
+    display: block;
+    color: #000000;
+    font-size: 2.5em;
+}
+
+.project-link:hover{
+    text-decoration: none;
+    color: #000;
+    background: #ffff00;
+}
+
+.project-technologies{
+    margin: 2% 0;
+    font-weight: 800;
 }

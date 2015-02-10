@@ -6,15 +6,25 @@ portfolioApp.controller('projectController', ['$scope', '$location', 'projectFac
             function (data) {
                 if (data.status == 200) {
                     $scope.project = data.project
-                    console.log()
+
+                    $scope.soon = data.project[0].id
+                    console.log(data.project[0].id)
+                    if( data.project[0].id === null){
+
+                    }
+
 
                     projectPhotoFactory.getProjectPhoto(data.project[0].id)
                         .success(function (photos) {
                             if (photos.status == 200) {
                                 $scope.photos = photos.photos
+
                             }
                         })
-                        .error(data)
+                        .error(function(){
+                        })
+                }
+                else{
                 }
             }
         )

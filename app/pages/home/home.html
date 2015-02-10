@@ -1,41 +1,43 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="hi-text"> HI !</h1>
+<div class="home-cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="hi-text"> HI !</h1>
+            </div>
+            <div class="col-md-12">
+                <h1 class="name-text">
+                    <span class="im-text">I'm </span>
+                    LOVRO
+                    <span class="surname-text">Predovan</span>
+                </h1>
+            </div>
         </div>
-        <div class="col-md-12">
-            <h1 class="name-text">
-                <span class="im-text">I'm </span>
-                LOVRO
-                <span class="surname-text">Predovan</span>
-            </h1>
+        <!--Homepage image carousel-->
+        <div id="homepageCarousel" class="carousel slide hidden-xs" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="active item">
+                    <h1 class="description-text">Web developer</h1>
+                </div>
+                <div class="item">
+                    <h1 class="description-text">Student</h1>
+                </div>
+                <div class="item">
+                    <h1 class="description-text">Idea maker</h1>
+                </div>
+                <div class="item">
+                    <h1 class="description-text">Problem solver</h1>
+                </div>
+            </div>
+            <ol class="carousel-indicators carousel-navigation">
+                <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#homepageCarousel" data-slide-to="1"></li>
+                <li data-target="#homepageCarousel" data-slide-to="2"></li>
+                <li data-target="#homepageCarousel" data-slide-to="3"></li>
+            </ol>
         </div>
+        <!--Picture and find out-->
+        <i class="fa fa-chevron-down fa-3x arrow-down" ng-click="gotoMe()"></i>
     </div>
-    <!--Homepage image carousel-->
-    <div id="homepageCarousel" class="carousel slide hidden-xs" data-ride="carousel" data-interval="2000">
-        <div class="carousel-inner">
-            <div class="active item">
-                <h1 class="description-text">Web developer</h1>
-            </div>
-            <div class="item">
-                <h1 class="description-text">Student</h1>
-            </div>
-            <div class="item">
-                <h1 class="description-text">Idea maker</h1>
-            </div>
-            <div class="item">
-                <h1 class="description-text">Problem solver</h1>
-            </div>
-        </div>
-        <ol class="carousel-indicators carousel-navigation">
-            <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#homepageCarousel" data-slide-to="1"></li>
-            <li data-target="#homepageCarousel" data-slide-to="2"></li>
-            <li data-target="#homepageCarousel" data-slide-to="3"></li>
-        </ol>
-    </div>
-    <!--Picture and find out-->
-    <i class="fa fa-chevron-down fa-3x arrow-down" ng-click="gotoMe()"></i>
 </div>
 <section class="yellow-container">
     <a class="know-text" id="me" href="/about">GET TO KNOW ME</a>

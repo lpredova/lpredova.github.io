@@ -8,7 +8,7 @@ portfolioApp.factory('projectPhotoFactory', ['$http', function ($http) {
                     value: id
                 }
             };
-            return $http.post("http://localhost/portfolioAPI/api_add.php", params);
+            return $http.post("http://apartments-lela.com/api/v1/api_add.php", params);
         }
     };
 }]);

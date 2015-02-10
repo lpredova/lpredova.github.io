@@ -6,15 +6,14 @@ portfolioApp.controller('postController', ['$scope', '$location', 'postFactory',
             .success(function (post) {
                 console.log(post)
                 if (post.status == 200) {
+                    $scope.post = post.post
                     id = post.post[0].id
 
                     postPhotoFactory.getPostPhotos(id).success(
                         function(photos)
                         {
                             if(photos.status==200){
-                                $scope = photos.photos
-                                console.log("photos" + photos)
-                                console.log(photos.photos)
+                                $scope.photos = photos.photos
                             }
                         }
                     ).error()
@@ -22,8 +21,6 @@ portfolioApp.controller('postController', ['$scope', '$location', 'postFactory',
                         function (data) {
                             if(data.status==200){
                                 $scope.comments = data.comments
-                                console.log("comments" + data.comments)
-                                console.log(data.comments)
                             }
                         }
                     ).error()

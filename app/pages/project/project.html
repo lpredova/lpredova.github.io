@@ -1,22 +1,46 @@
 <div class="container">
     <div class="row">
+        <a href="/work" class="about-mark back-button">Back</a>
+    </div>
+</div>
+<div ng-repeat="p in project">
 
+    <div class="project-image img-responsive"
+         style="background: url({{p.cover}}) center;height: 400px"></div>
+</div>
 
+<div class="container">
+    <!--<div class="comming-soon">
+        Comming soon !
+    </div>-->
+
+    <div class="row">
         <div class="col-md-12">
-            <a href="/work" class="about-mark">Back</a>
-
 
             <div ng-repeat="p in project">
-                <h1 class="category-title">{{p.title}}</h1>
-                {{p.description}}
-                {{p.link}}
-                {{p.tags}}
-                {{p.technologies}}
-                {{p.project_status}}
-                {{p.repo}}
+
+                <h1 class="category-title">
+                    {{p.title}}
+                </h1>
+
+                <div class="project-description">
+                    {{p.description}}
+                </div>
+
+                <a class="project-link" href="{{p.link}}">
+                    <span>{{p.title}}</span>
+                </a>
+
+                <p class="project-technologies">{{p.project_status}}</p>
+                <span class="project-link">{{p.tags}}</span>
+
+                <p class="project-technologies">{{p.technologies}}</p>
+                <a href="{{p.repo}}" class="project-link">{{p.repo}}</a>
             </div>
+
             <div ng-repeat="photo in photos">
-                <img src="{{photo.url}}">
+                <div class="col-md-3 project-image img-responsive"
+                     style="background: url({{photo.url}}) center;width: 300px;height: 300px"></div>
             </div>
 
 

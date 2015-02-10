@@ -11,7 +11,7 @@ portfolioApp.factory('blogFactory', ['$http', function ($http) {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             };
-            return $http.post("http://localhost/portfolioAPI/api_main.php", params);
+            return $http.post("http://apartments-lela.com/api/v1/api_main.php", params);
         }
     };
 }]);

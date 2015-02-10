@@ -1,8 +1,35 @@
 <div class="container">
     <div class="row">
-        <h1 class="category-title">Lovro's Blog</h1>
+        <div class="row">
+            <a href="/blog" class="about-mark back-button">Back</a>
+        </div>
 
         <div class="col-md-12">
+            <div ng-repeat="p in post">
+
+                <h1 class="category-title">{{p.title}}</h1>
+                <h2>{{p.summary}}</h2>
+
+                <pre class="about-text">
+                    {{p.text}}
+                </pre>
+
+                <span class="tag-badge">{{p.time}}</span>
+            </div>
+
+            <div ng-repeat="photo in photos">
+                <div class="col-md-3">
+                    <img class="img-responsive project-image" src="{{photo.url}}">
+                </div>
+            </div>
+
+            <h2>Comments:</h2>
+            <div ng-repeat="comment in comments">
+                <strong>{{p.author}}</strong>
+                <span class="text-muted">{{p.time}}</span>
+                {{p.text}}
+            </div>
+
 
         </div>
     </div>
