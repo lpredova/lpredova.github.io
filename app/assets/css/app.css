@@ -6,7 +6,6 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    overflow-y: hidden;
 }
 
 a {
@@ -25,10 +24,11 @@ h3 {
     text-align: center;
 }
 
-.visibility-hide{
+.visibility-hide {
     visibility: hidden;
 }
-.visibility-show{
+
+.visibility-show {
     visibility: visible;
 }
 
@@ -181,14 +181,13 @@ h3 {
 /*------------------------------*/
 /* Home page
 /*------------------------------*/
-.home-cover{
-    background:  url("/app/assets/images/background.jpg ") no-repeat center center fixed;
+.home-cover {
+    background: url("/app/assets/images/background.jpg ") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 .hi-text {
     margin: 10% 0 5% 5%;
@@ -197,7 +196,7 @@ h3 {
     padding: 2%;
     color: #000;
     background-color: #FFFF00;
-    width: 21%;
+    width: 30%;
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
@@ -262,10 +261,10 @@ h3 {
 }
 
 .know-text {
+    text-align: center;
     height: 70px;
-    margin-left: 43%;
     cursor: pointer;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 900;
     color: #000;
 }
@@ -285,9 +284,10 @@ h3 {
 /*------------------------------*/
 /* About page
 /*------------------------------*/
-.about-image{
+.about-image {
     margin: 2% 40%;
 }
+
 .about-text {
     text-align: justify;
     font-size: 1.5em;
@@ -395,7 +395,7 @@ h3 {
 /*------------------------------*/
 /* Work page
 /*------------------------------*/
-.also-work{
+.also-work {
     margin: 10% 0 30% 0;
 }
 
@@ -504,16 +504,15 @@ h3 {
 /* Blog page
 /*------------------------------*/
 
-#input-container{
+#input-container {
     text-align: center;
     font-size: 3em;
     padding: 4%;
-    margin:2% 25%;
+    margin: 2% 25%;
 }
 
-
 .input-search-blog:focus,
-#input-container:focus{
+#input-container:focus {
     text-align: center;
     border-color: #000;
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
@@ -524,11 +523,13 @@ h3 {
     text-align: center;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+    /* Firefox 18- */
     text-align: center;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {
+    /* Firefox 19+ */
     text-align: center;
 }
 
@@ -545,22 +546,23 @@ h3 {
     font-weight: 800;
 }
 
-.post-title{
+.post-title {
     cursor: pointer;
     font-size: 3em;
 }
 
-.post-summary{
+.post-summary {
     cursor: pointer;
     text-align: justify;
     font-size: 1.5em;
     font-weight: 800;
 }
 
-.post-details{
+.post-details {
     margin: 0 0 5% 0;
 }
-.timestamp-badge{
+
+.timestamp-badge {
     width: 5%;
     margin: 2% 0;
     padding: 0.5%;
@@ -569,7 +571,7 @@ h3 {
     font-weight: 800;
 }
 
-.tag-badge{
+.tag-badge {
     width: 3%;
     color: #000;
     background: #ffff00;
@@ -581,22 +583,22 @@ h3 {
 /* Project page
 /*------------------------------*/
 
-.back-button{
+.back-button {
     font-size: 2em;
 }
 
-.project-image{
+.project-image {
     margin: 4% 0;
     height: 400px;
 }
 
-.project-description{
+.project-description {
     color: #000000;
     font-size: 2em;
     margin-bottom: 3%;
 }
 
-.project-link{
+.project-link {
     padding: 2px;
     text-align: center;
     margin: 4% 0;
@@ -605,13 +607,93 @@ h3 {
     font-size: 2.5em;
 }
 
-.project-link:hover{
+.project-link:hover {
     text-decoration: none;
     color: #000;
     background: #ffff00;
 }
 
-.project-technologies{
+.project-technologies {
     margin: 2% 0;
     font-weight: 800;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+
+    .im-text{
+        margin-left: 33%;
+    }
+
+    .hi-text {
+        margin: 30% 0 0 35%;
+        font-size: 4em;
+        width: 35%;
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    .name-text{
+        margin: 0 0 0 13%;
+        padding-bottom: 10%;
+        font-size: 4.5em;
+    }
+
+    .surname-text{
+        margin-left: 25%;
+        margin-bottom: 10%;
+        font-size: 0.4em;
+    }
+
+    .yellow-container{
+        height: 250px;
+    }
+    .home-picture {
+        margin: 4% 30%;
+        width: 40%;
+    }
+
+    .category-title {
+        font-size: 5em;
+        margin-top: 20%;
+    }
+
+    .ch-grid li {
+        width: 150px;
+        height: 150px;
+    }
+    .ch-info h3 {
+        font-size: 1em;
+    }
+
+    .skills-list li {
+        font-weight: 700;
+        font-size: 1em;
+    }
+
+    .input-search-blog {
+        margin-left: -85px;
+        width: 282px;
+    }
+
+    .contact-email {
+        margin: 0 0;
+        font-size: 20px;
+    }
+
+    .contact-icons{
+        display: inline;
+    }
+
+}
+
+/*Tablets*/
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    /* Styles */
 }
