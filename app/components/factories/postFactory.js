@@ -7,7 +7,7 @@ portfolioApp.factory('postFactory', ['$http', function ($http) {
                     value: slug
                 }
             };
-            return $http.post("https://apartments-lela.com/api/v1/api_main.php", params);
+            return $http.post("http://apartments-lela.com/api/v1/api_main.php", params);
         }
     };
 }]);
