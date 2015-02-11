@@ -6,36 +6,31 @@
 <div ng-repeat="p in project">
 
     <div class="project-image img-responsive"
-         style="background: url({{p.cover}}) center;height: 400px"></div>
+         style="background: url({{p.cover}}) center fixed #FFFF00;height: 400px"></div>
 </div>
 
 <div class="container">
-    <!--<div class="comming-soon">
-        Comming soon !
-    </div>-->
-
     <div class="row">
         <div class="col-md-12">
 
             <div ng-repeat="p in project">
 
                 <h1 class="category-title">
-                    {{p.title}}
+                    <a class="project-link" href="{{p.link}}" target="_blank">
+                       {{p.title}}
+                    </a>
                 </h1>
 
+                <span class="about-mark">{{p.tags}}</span>
                 <div class="project-description">
                     {{p.description}}
                 </div>
-
-                <a class="project-link" href="{{p.link}}">
-                    <span>{{p.title}}</span>
-                </a>
-
-                <p class="project-technologies">{{p.project_status}}</p>
-                <span class="project-link">{{p.tags}}</span>
-
                 <p class="project-technologies">{{p.technologies}}</p>
+                <p class="project-technologies">{{p.project_status}}</p>
                 <a href="{{p.repo}}" class="project-link">{{p.repo}}</a>
+
+                <span class="about-mark">{{p.type}}</span>
+
             </div>
 
             <div ng-repeat="photo in photos">
