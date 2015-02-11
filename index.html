@@ -10,13 +10,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lovro Predovan :: Web programmer</title>
+    <title>Lovro Predovan :: Web dev :: Idea maker :: Problem solver</title>
 
     <link rel="shortcut icon" href="/favicon.ico"/>
 
     <meta name="description" content="Lovro Predovan portfoilo pages"/>
-    <meta name="keywords" content="lovro predovan, lpredova, javascript, php , laravel, angularjs , angular, developer, zadar, varazdin, hrvatska, croatia, student, freelancer, hire, "/>
+    <meta name="keywords"
+          content="lovro predovan, lpredova, javascript, php, laravel, angularjs , angular, developer, zadar, varazdin, hrvatska, croatia, student, freelancer, hire, "/>
     <meta name="author" content="Lovro Predovan"/>
+
+    <!--OG tags--->
+    <meta property="og:title" content="Lovro Predovan :: Web dev :: Idea maker :: Problem solver"/>
+    <meta property="og:site_name" content="LP blog & web portfolio"/>
+    <meta property="og:url" content="http://lovropredovan.com"/>
+    <meta property="og:description" content=
+            "Hi there you curious stranger! Nice to meet you! I'm Lovro freelance web developer and I here to help your ideas come true. Feel free to contact me,follow me or just drop by to say HI!"/>
+    <meta property="og:image" content="http://lovropredovan.com/assets/images/hi.jpg" />
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,9 +34,6 @@
     <link rel="stylesheet" href="app/assets/css/app.css">
     <link rel="stylesheet" href="app/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/assets/css/bootstrap.min.css">
-
-
-    <script src="app/assets/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 
@@ -57,10 +63,15 @@
 
     <!--Content-->
     <div ng-view></div>
+    <footer>
+        <div class="text-center"><h2 class="footer">Lovro 2015 &copy;</h2></div>
+    </footer>
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
     -->
+    <script src="app/assets/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
     <script src="app/assets/bower_components/angular/angular.js"></script>
     <script src="app/assets/bower_components/angular-route/angular-route.js"></script>
     <!--Modules and routes--->
