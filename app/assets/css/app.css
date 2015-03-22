@@ -130,7 +130,8 @@ h3 {
 }
 
 #menu-toggle {
-    margin: 2%;
+    padding: 1%;
+    margin: 4%;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -168,13 +169,6 @@ h3 {
 }
 
 /*------------------------------*/
-/* Footer
-/*------------------------------*/
-.footer{
-    margin: 8% 0;
-}
-
-/*------------------------------*/
 /* Animations
 /*------------------------------*/
 .rotate,
@@ -197,16 +191,12 @@ h3 {
 }
 
 .hi-text {
-    margin: 3% 0 5% 5%;
+    margin: 6% 35%;
     font-size: 7em;
-    text-align: left;
     padding: 2%;
     color: #000;
     background-color: #FFFF00;
     width: 30%;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
 }
 
 .im-text {
@@ -216,10 +206,10 @@ h3 {
 }
 
 .name-text {
-    margin: 1% 0 0 25.5%;
-    font-size: 12em;
+    letter-spacing: 10px;
+    margin: 15% 0 2% 0;
+    font-size: 10em;
     font-weight: 900;
-    text-align: left;
     color: #ffffff;
 }
 
@@ -229,8 +219,8 @@ h3 {
 
 .description-text {
     padding: 2%;
-    margin: 2% 0 0 26%;
-    width: 50%;
+    margin: 2% 0 0 30%;
+    width: 40%;
     text-align: center;
     background-color: #ffff00;
 }
@@ -269,10 +259,12 @@ h3 {
 }
 
 .know-text {
+    margin: 15% 0;
+    display: inline-block;
     text-align: center;
     height: 70px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 3em;
     font-weight: 900;
     color: #000;
 }
@@ -281,7 +273,6 @@ h3 {
     color: #FFFF00;
     text-decoration: none;
     background: #000000;
-    border-bottom: 3px solid #000;
 }
 
 .yellow-container {
@@ -303,6 +294,7 @@ h3 {
 }
 
 .about-mark {
+    padding: 2px;
     font-weight: 900;
     color: #000000;
     background: #ffff00;
@@ -355,7 +347,6 @@ h3 {
 }
 
 .contact-email {
-    margin: 7% 22%;
     text-align: center;
     font-size: 3.6em;
     font-weight: 800;
@@ -369,7 +360,6 @@ h3 {
 }
 
 .contact-icons {
-    width: 25%;
     margin: 20% 35%;
     padding: 6%;
     color: #000;
@@ -404,7 +394,7 @@ h3 {
 /* Work page
 /*------------------------------*/
 .also-work {
-    margin: 10% 0 30% 0;
+    margin: 5% 0 10% 0;
 }
 
 .ch-grid {
@@ -446,24 +436,24 @@ h3 {
 }
 
 .ch-img-1 {
-    background: url(/app/assets/images/zadarplus.jpg) no-repeat center;
+    background: url(/app/assets/images/zadarplus.png) #fff no-repeat center;
 }
 
 .ch-img-2 {
-    background: url(/app/assets/images/lela.jpg) no-repeat center #3498db;
+    background: url(/app/assets/images/lela.png) #fff no-repeat center;
 }
 
 .ch-img-3 {
-    background: url(#) #e74c3c;
+    background: url(/app/assets/images/volonteri.jpg) #fff no-repeat center;
 }
 
 .ch-img-4 {
-    background: url(/app/assets/images/katyusha.png);
+    background-size: 300px 300px;
+    background: url(/app/assets/images/katyusha-icon.png) #1abc9c no-repeat center;
 }
 
 .ch-img-5 {
-    background-size: contain;
-    background: url(/app/assets/images/zimmer.jpg) #2c3e50;
+    background: url(/app/assets/images/zimmer.png) rgba(44, 62, 80, 1) no-repeat center;
 }
 
 .ch-img-6 {
@@ -473,7 +463,7 @@ h3 {
 
 .ch-info {
     position: absolute;
-    background: rgba(255, 255, 0, 0.8);
+    background: rgba(118, 118, 118, 0.73);
     width: inherit;
     height: inherit;
     border-radius: 50%;
@@ -484,7 +474,7 @@ h3 {
 }
 
 .ch-info h3 {
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2.4em;
@@ -631,42 +621,21 @@ h3 {
 and (min-width: 320px)
 and (max-width: 480px) {
 
-    .im-text{
-        margin-left: 39%;
-    }
-
-    .hi-text {
-        margin: 30% 0 0 35%;
-        font-size: 3.4em;
-        width: 35%;
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
 
     .name-text{
-        margin: 0 0 0 13%;
+        margin: 40% 0 10% 0;
         padding-bottom: 10%;
-        font-size: 5.5em;
+        font-size: 3.5em;
     }
 
-    .surname-text{
-        margin-left: 25%;
-        margin-bottom: 10%;
-        font-size: 0.4em;
-    }
-
-    .yellow-container{
-        height: 300px;
-    }
     .home-picture {
         margin: 4% 30%;
         width: 40%;
     }
 
     .category-title {
-        font-size: 5em;
-        margin-top: 20%;
+        font-size: 4em;
+        margin-top: 5%;
     }
 
     .ch-grid li {
@@ -678,8 +647,13 @@ and (max-width: 480px) {
     }
 
     .skills-list li {
+        text-align: center;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+
+    .about-image {
+        margin: 2% 25%;
     }
 
     .input-search-blog {
@@ -693,9 +667,16 @@ and (max-width: 480px) {
     }
 
     .contact-icons{
+        width: 50px;
         display: inline;
+        margin: 0;
     }
 
+    .about-text{
+        text-align: left;
+        line-height: 30px;
+        font-size: 1.2em;
+    }
 }
 
 /*Tablets*/
@@ -708,30 +689,13 @@ and (max-device-width: 1024px) {
 
 }
 @media only screen and (min-width : 603px) and (max-width : 966px) {
-    .im-text{
-        margin-left: 42%;
-    }
 
-    .hi-text {
-        margin: 15% 0 10% 35%;
-        font-size: 3.4em;
-        width: 35%;
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    .name-text{
-        margin: 0 0 0 13%;
+    .name-text {
+        margin: 30% 0 10% 0;
         padding-bottom: 10%;
-        font-size: 9.5em;
+        font-size: 5.5em;
     }
 
-    .surname-text{
-        margin-left: 25%;
-        margin-bottom: 10%;
-        font-size: 0.4em;
-    }
 
     .yellow-container{
         height: 100%;
@@ -743,7 +707,6 @@ and (max-device-width: 1024px) {
 
     .category-title {
         font-size: 5em;
-        margin-top: 20%;
     }
 
     .ch-grid li {
@@ -754,9 +717,15 @@ and (max-device-width: 1024px) {
         font-size: 1em;
     }
 
+    .about-text{
+        line-height: 30px;
+        font-size: 1.2em;
+    }
+
     .skills-list li {
+        text-align: center;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .input-search-blog {
@@ -770,41 +739,19 @@ and (max-device-width: 1024px) {
     }
 
     .contact-icons{
-        margin: 2% 35%;
-        padding: 5%;
+        margin: 2% 1%;
+        padding-left: 33%;
     }
 }
 
 @media only screen and (min-width : 481px) and (max-width : 603px) {
 
-    .im-text{
-        margin-left: 42%;
-    }
-
-    .hi-text {
-        margin: 15% 0 10% 35%;
-        font-size: 3.4em;
-        width: 35%;
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
     .name-text{
-        margin: 0 0 0 13%;
+        margin: 40% 0 10% 0;
         padding-bottom: 10%;
-        font-size: 7.5em;
+        font-size: 3.5em;
     }
 
-    .surname-text{
-        margin-left: 25%;
-        margin-bottom: 10%;
-        font-size: 0.4em;
-    }
-
-    .yellow-container{
-        height: 100%;
-    }
     .home-picture {
         margin: 4% 30%;
         width: 40%;
@@ -824,8 +771,9 @@ and (max-device-width: 1024px) {
     }
 
     .skills-list li {
+        text-align: center;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .input-search-blog {
@@ -839,7 +787,12 @@ and (max-device-width: 1024px) {
     }
 
     .contact-icons{
-        margin: 2% 35%;
-        padding: 5%;
+        margin: 2% 1%;
+        padding-left: 33%;
+    }
+
+    .about-text{
+        line-height: 30px;
+        font-size: 1.2em;
     }
 }
