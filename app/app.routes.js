@@ -24,10 +24,6 @@ portfolioApp.config(['$routeProvider', '$locationProvider',
                     templateUrl: '/app/pages/contact/contact.html',
                     controller: 'contactController'
                 }).
-                when('/blog', {
-                    templateUrl: '/app/pages/blog/blog.html',
-                    controller: 'blogController'
-                }).
                 when('/work/project/:slug', {
                     templateUrl: '/app/pages/project/project.html',
                     controller: 'projectController'

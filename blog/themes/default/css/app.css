@@ -1,0 +1,383 @@
+/* app css stylesheet */
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: #000;
+}
+
+a:hover{
+    color: #000000;
+    font-weight: 900;
+}
+
+
+h2 {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: #000000;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.visibility-hide {
+    visibility: hidden;
+}
+
+.visibility-show {
+    visibility: visible;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.blog-header{
+    background: url("https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/11083894_10152865988820017_3485192721285234746_n.jpg?oh=9024c4e7514bf88364d82ec6dcdbd7f7&oe=559891E9&__gda__=1441093782_6cff67a9af71051e6b66e36e7e88b159") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FFFF00;
+}
+
+.category-title {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 6em;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
+
+
+.description-text-min{
+    padding: 4px;
+    width: 80px;
+    text-align: center;
+    background-color: #ffff00;
+}
+
+.post-title{
+    font-size: 36px;
+}
+
+.twitter-follow-button{
+    margin-bottom: 30px;
+}
+
+/*------------------------------*/
+/*Toggle button
+/*------------------------------*/
+
+.toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5%;
+    padding: 1%;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.toggle:hover {
+    color: #ffff00;
+}
+
+/*------------------------------*/
+/*Sidebar*/
+/*------------------------------*/
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-top: 10%;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: left;
+}
+
+.sidebar-nav li a:first-child {
+    height: 30px;
+    margin-top: 10%;
+}
+
+.sidebar-nav li a {
+    margin-left: 20%;
+    padding: 2%;
+    text-align: left;
+    font-size: 2.4em;
+    color: #ffffff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #FFFF00;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+#menu-toggle {
+    padding: 1%;
+    margin: 4%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+#menu-close {
+    z-index: 3;
+    cursor: pointer;
+    display: block;
+    color: #f0f0f0;
+    margin-left: 75%;
+}
+
+#menu-close:hover {
+    color: #ffff00;
+}
+
+.side-lp {
+    position: relative;
+    top: 500px;
+    left: 18%;
+    font-size: 2em;
+    color: #ffff00;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+
+
+    .name-text{
+        margin: 40% 0 10% 0;
+        padding-bottom: 10%;
+        font-size: 3.5em;
+    }
+
+    .home-picture {
+        margin: 4% 30%;
+        width: 40%;
+    }
+
+    .category-title {
+        font-size: 4em;
+        margin-top: 5%;
+    }
+
+    .ch-grid li {
+        width: 150px;
+        height: 150px;
+    }
+    .ch-info h3 {
+        font-size: 1em;
+    }
+
+    .skills-list li {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
+    .about-image {
+        margin: 2% 25%;
+    }
+
+    .input-search-blog {
+        margin-left: -85px;
+        width: 282px;
+    }
+
+    .contact-email {
+        margin: 0 0;
+        font-size: 20px;
+    }
+
+    .contact-icons{
+        width: 50px;
+        display: inline;
+        margin: 0;
+    }
+
+    .about-text{
+        text-align: left;
+        line-height: 30px;
+        font-size: 1.2em;
+    }
+}
+
+/*Tablets*/
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    /* Styles */
+
+
+}
+@media only screen and (min-width : 603px) and (max-width : 966px) {
+
+    .name-text {
+        margin: 30% 0 10% 0;
+        padding-bottom: 10%;
+        font-size: 5.5em;
+    }
+
+
+    .yellow-container{
+        height: 100%;
+    }
+    .home-picture {
+        margin: 4% 30%;
+        width: 40%;
+    }
+
+    .category-title {
+        font-size: 5em;
+    }
+
+    .ch-grid li {
+        width: 150px;
+        height: 150px;
+    }
+    .ch-info h3 {
+        font-size: 1em;
+    }
+
+    .about-text{
+        line-height: 30px;
+        font-size: 1.2em;
+    }
+
+    .skills-list li {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
+    .input-search-blog {
+        margin-left: -85px;
+        width: 282px;
+    }
+
+    .contact-email {
+        margin: 0 0;
+        font-size: 42px;
+    }
+
+    .contact-icons{
+        margin: 2% 1%;
+        padding-left: 33%;
+    }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 603px) {
+
+    .name-text{
+        margin: 40% 0 10% 0;
+        padding-bottom: 10%;
+        font-size: 3.5em;
+    }
+
+    .home-picture {
+        margin: 4% 30%;
+        width: 40%;
+    }
+
+    .category-title {
+        font-size: 5em;
+        margin-top: 20%;
+    }
+
+    .ch-grid li {
+        width: 150px;
+        height: 150px;
+    }
+    .ch-info h3 {
+        font-size: 1em;
+    }
+
+    .skills-list li {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
+    .input-search-blog {
+        margin-left: -85px;
+        width: 282px;
+    }
+
+    .contact-email {
+        margin: 0 0;
+        font-size: 42px;
+    }
+
+    .contact-icons{
+        margin: 2% 1%;
+        padding-left: 33%;
+    }
+
+    .about-text{
+        line-height: 30px;
+        font-size: 1.2em;
+    }
+}

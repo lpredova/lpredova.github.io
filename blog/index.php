@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 
 define('ROOT_DIR', realpath(dirname(__FILE__)) . '/');
 define('CONTENT_DIR', ROOT_DIR . 'content/');
