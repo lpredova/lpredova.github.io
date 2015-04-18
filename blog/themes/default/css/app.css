@@ -100,7 +100,16 @@ h3 {
     color: #fff;
     padding: 5px;
     background-color: #000;
+}
 
+#share .btn-mail, #share .btn-read, #share .btn-mail, #share .btn-read:visited, #share .btn-mail:visited {
+    background: #FFFF00;
+    color: #000;
+}
+
+#share .btn-mail:hover, #share .btn-read:hover {
+    background: #000;
+    color: #FFFF00;
 }
 
 /*------------------------------*/

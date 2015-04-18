@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="{{ theme_url }}/css/app.css">
     <link rel="stylesheet" href="{{ theme_url }}/css/font-awesome.min.css">
 
-    <title>{% if meta.title %}{{ meta.title }} | {% endif %} Lovro Predovan</title>
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
     {% if meta.description %}
     <meta name="description" content="{{ meta.description }}">
     {% endif %}{% if meta.robots %}
