@@ -77,6 +77,26 @@ h3 {
     margin-bottom: 30px;
 }
 
+#share{
+    padding: 5px 20px;
+}
+
+#share a{
+    margin: 0 5px;
+}
+
+#share a:hover{
+    background: #FFFF00;
+    color: #000000;
+}
+
+.social-share{
+    color: #fff;
+    padding: 5px;
+    background-color: #000;
+
+}
+
 /*------------------------------*/
 /*Toggle button
 /*------------------------------*/
