@@ -9,4 +9,3 @@ js.src = '//connect.facebook.net/en_US/all.js#xfbml=1&appId=902793989770799';
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 EOF;
-?>
