@@ -118,7 +118,9 @@
                     {% if meta.title %}<h2>{{ meta.title }}</h2>{% endif %}
                     <p class="meta">{{ meta.date_formatted }}</p>
                     {{ content }}
-                    {{ social_share }}
+                    <div class="social">
+                        {{ social_share }}
+                    </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="center-block">
