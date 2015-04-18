@@ -4,7 +4,7 @@ class fb_comments {
                 $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
                 include 'fb_api.php';
                 $fb = "<br><div class='fb-comments' data-href='".$url."' data-num-posts='2' data-width='40%'></div>";
-                //$content = $fb_sdk.$content.$social.$fb;
+                $content = $fb_sdk.$content;
         }
 }
 ?>
